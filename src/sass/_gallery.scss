@@ -3,6 +3,7 @@
   color: #212121;
   margin: 0;
   padding: 30px;
+  min-height: 100vh;
 }
 
 .search-form {
@@ -46,10 +47,11 @@
 
 .gallery {
   margin-top: 40px;
-  gap: 20px 20px;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .photo-card {
@@ -59,13 +61,16 @@
   background: -webkit-linear-gradient(90deg, #edefee, #c9c9c9);
   border-radius: 10px;
   padding: 10px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   box-shadow: 5px 5px 13px 0px rgba(34, 60, 80, 0.6);
 }
 
 .photo-card img {
+  border-radius: 10px;
   width: 300px;
 }
 
@@ -86,4 +91,13 @@
 
 .hide {
   display: none;
+}
+
+.wrapper-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-btn .button {
+  width: 310px;
 }
